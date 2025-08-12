@@ -3,7 +3,7 @@ from app.config import ZAPI_INSTANCE, ZAPI_TOKEN
 
 def enviar_mensagem(nome, telefone):
     mensagem = f"Olá {nome}, tudo bem com você?"
-    url = f"https://api.z-api.io/instances/{ZAPI_INSTANCE}/token/{ZAPI_TOKEN}/send-messages"
+    url = f"https://api.z-api.io/instances/{ZAPI_INSTANCE}/token/{ZAPI_TOKEN}/send-text"
 
     payload = {
         "phone": telefone,
