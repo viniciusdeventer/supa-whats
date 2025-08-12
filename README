@@ -1,0 +1,33 @@
+## Requisitos
+
+- **Python** 3.10 ou superior
+- **pip** (gerenciador de pacotes do Python)
+- Conta e credenciais na [Z-API](https://z-api.io)
+
+## Instalação
+
+1. **Clonar o repositório**
+   git clone https://github.com/viniciusdeventer/supa-whats.git
+   cd supa-whats
+
+2. **Criar ambiente virtual**
+   python3 -m venv venv
+   source venv/bin/activate    # Linux/Mac
+   venv\Scripts\activate       # Windows
+
+3. **Instalar dependências**
+   pip install -r requirements.txt
+
+4. **Tabela do Supabase**
+   No painel do seu projeto Supabase, crie uma tabela chamada usuarios.
+
+   Adicione ao menos as colunas:
+    nome (tipo text ou varchar)
+    telefone (tipo text ou varchar)
+
+4. **Váriaveis de Ambiente**   
+   cp .env.example .env
+   Edite as variáveis do arquivo .env 
+
+5. **Rode o programa**
+   python3 -m app.main
